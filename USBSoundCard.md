@@ -106,6 +106,13 @@ arecord   ------ For recording the sound
 
 aplay     ------ For playing back your recording
 
+# WAV and MP3 Conversion
+
+The MP3 player mpg321 can convert MP3 files to WAV files but the WAV player, aplay, can not do a conversion.  To make a MP3 file from a WAV file, you’ll need the tool lame.
+
+    To convert from WAV to MP3: lame input.wav output.mp3
+    To convert from MP3 to WAV:  mpg321 -w output.wav input.mp3
+
 Reference :
 http://cagewebdev.com/index.php/raspberry-pi-getting-audio-working/
 
@@ -113,4 +120,4 @@ http://blog.scphillips.com/posts/2013/01/sound-configuration-on-raspberry-pi-wit
 
 https://learn.adafruit.com/usb-audio-cards-with-a-raspberry-pi/updating-alsa-config
 
-https://learn.adafruit.com/usb-audio-cards-with-a-raspberry-pi/updating-alsa-config
+https://jeffskinnerbox.wordpress.com/2012/11/15/getting-audio-out-working-on-the-raspberry-pi/
